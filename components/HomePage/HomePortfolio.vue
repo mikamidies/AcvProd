@@ -2,70 +2,10 @@
   <div class="wrap">
     <h1 class="title">Portfolio</h1>
     <div class="items">
-      <div class="item">
+      <div class="item" v-for="item in videos" :key="item.id">
         <div class="iframe">
           <iframe
-            src="https://www.youtube.com/embed/T_lC2O1oIew?&controls=0&loop=1&rel=0&playlist=T_lC2O1oIew"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="item">
-        <div class="iframe">
-          <iframe
-            src="https://www.youtube.com/embed/T_lC2O1oIew?&controls=0&loop=1&rel=0&playlist=T_lC2O1oIew"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="item">
-        <div class="iframe">
-          <iframe
-            src="https://www.youtube.com/embed/T_lC2O1oIew?&controls=0&loop=1&rel=0&playlist=T_lC2O1oIew"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="item">
-        <div class="iframe">
-          <iframe
-            src="https://www.youtube.com/embed/T_lC2O1oIew?&controls=0&loop=1&rel=0&playlist=T_lC2O1oIew"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="item">
-        <div class="iframe">
-          <iframe
-            src="https://www.youtube.com/embed/T_lC2O1oIew?&controls=0&loop=1&rel=0&playlist=T_lC2O1oIew"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="item">
-        <div class="iframe">
-          <iframe
-            src="https://www.youtube.com/embed/T_lC2O1oIew?&controls=0&loop=1&rel=0&playlist=T_lC2O1oIew"
+            :src="`https://www.youtube.com/embed/${item.src}?&controls=0&loop=1&rel=0&playlist=${item.src}`"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -79,7 +19,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      videos: [
+        {
+          src: "T_lC2O1oIew",
+        },
+        {
+          src: "T_lC2O1oIew",
+        },
+        {
+          src: "T_lC2O1oIew",
+        },
+        {
+          src: "T_lC2O1oIew",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
