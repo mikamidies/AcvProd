@@ -166,7 +166,10 @@ input[type="number"] {
 .title.white {
   color: white;
 }
-
+.anchor {
+  position: absolute;
+  top: -100px;
+}
 @media screen and (max-width: 1024px) {
   .title {
     font-size: 32px;

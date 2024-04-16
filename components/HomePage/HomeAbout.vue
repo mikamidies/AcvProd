@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="about"></div>
     <div class="container">
       <div class="grid">
         <div class="left">
@@ -41,6 +42,7 @@ export default {};
 <style scoped>
 .wrap {
   padding: 80px 0 40px 0;
+  position: relative;
 }
 .grid {
   display: grid;
@@ -69,5 +71,13 @@ export default {};
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sup {
+    min-width: 0;
+  }
 }
 </style>

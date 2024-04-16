@@ -4,11 +4,14 @@
       <div class="brand" @click="scrollElement('hero')">
         <img src="@/assets/img/white.png" alt="" />
       </div>
+      <div class="burger">
+        <div class="stick"></div>
+      </div>
       <div class="links">
-        <button>Biz haqimizda</button>
-        <button>Portfolio</button>
-        <button>Bog'lanish</button>
-        <button>Hmakorlarimiz</button>
+        <button @click="scrollElement('about')">Biz haqimizda</button>
+        <button @click="scrollElement('portfolio')">Portfolio</button>
+        <button @click="scrollElement('contacts')">Bog'lanish</button>
+        <button @click="scrollElement('partners')">Hmakorlarimiz</button>
       </div>
     </div>
   </div>
@@ -72,5 +75,51 @@ img {
 }
 .scroll img {
   width: 180px;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .links {
+    position: fixed;
+    top: 106px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+  img {
+    width: 120px;
+  }
+  .scroll img {
+    width: 120px;
+  }
+  .burger {
+    display: flex;
+  }
+  .stick {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background: white;
+  }
+  .stick::after {
+    width: 30px;
+    height: 2px;
+    background: white;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .stick::before {
+    width: 30px;
+    height: 2px;
+    background: white;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
 }
 </style>

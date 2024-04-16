@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="contacts"></div>
     <div class="container">
       <h4 class="title">Biz bilan bog'lanish</h4>
       <form method="POST" @submit.prevent="sendTelegram">
@@ -55,6 +56,7 @@ export default {
 <style scoped>
 .wrap {
   padding: 40px 0 80px 0;
+  position: relative;
 }
 .title {
   font-weight: 600;

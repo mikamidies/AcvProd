@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="partners"></div>
     <div class="container">
       <h4 class="title">Bizning hamkorlarimiz</h4>
       <div class="grid">
@@ -51,6 +52,7 @@ export default {};
 <style scoped>
 .wrap {
   padding-bottom: 80px;
+  position: relative;
 }
 .grid {
   display: grid;

@@ -47,4 +47,9 @@ export default {};
 .brand img {
   width: 320px;
 }
+@media screen and (max-width: 1024px) {
+  .val {
+    font-size: 20px;
+  }
+}
 </style>
