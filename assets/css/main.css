@@ -156,7 +156,7 @@ input[type="number"] {
 .title {
   font-size: 40px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%;
   border-left: 8px solid var(--red);
   color: var(--black);
