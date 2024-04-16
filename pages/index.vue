@@ -7,6 +7,7 @@
       <HomeAbout />
       <HomePortfolio />
       <HomeForm />
+      <HomePartners />
     </main>
 
     <DesktopFooter />

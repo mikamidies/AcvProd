@@ -1,22 +1,26 @@
 <template>
   <div class="wrap">
-    <h1 class="title">Portfolio</h1>
-    <div class="items">
-      <div
-        class="item"
-        v-for="item in videos"
-        :key="item.id"
-        @click="getId(item.id)"
-      >
-        <div class="iframe">
-          <iframe
-            :src="`https://www.youtube.com/embed/${item.src}?&controls=0&loop=1&rel=0&playlist=${item.src}`"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+    <div class="container">
+      <h1 class="title">Portfolio</h1>
+      <div class="swiper" ref="portSwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="item swiper-slide"
+            v-for="item in videos"
+            :key="item.id"
+            @click="getId(item.id)"
+          >
+            <div class="iframe">
+              <iframe
+                :src="`https://www.youtube.com/embed/${item.src}?&controls=0&loop=1&rel=0&playlist=${item.src}`"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -39,6 +43,9 @@
 </template>
 
 <script>
+import Swiper from "swiper/swiper-bundle.js";
+import "swiper/swiper-bundle.min.css";
+
 export default {
   data() {
     return {
@@ -61,8 +68,30 @@ export default {
           src: "HmAsUQEFYGI",
           id: 3,
         },
+        {
+          src: "DmWWqogr_r8",
+          id: 0,
+        },
+        {
+          src: "qFLhGq0060w",
+          id: 1,
+        },
+        {
+          src: "v3L1XdqGnyI",
+          id: 2,
+        },
+        {
+          src: "HmAsUQEFYGI",
+          id: 3,
+        },
       ],
     };
+  },
+
+  mounted() {
+    new Swiper(this.$refs.portSwiper, {
+      slidesPerView: 4,
+    });
   },
 
   methods: {
@@ -92,9 +121,14 @@ export default {
 .title {
   text-align: center;
   font-weight: 600 !important;
+  margin-bottom: 24px;
 }
 .wrap {
   padding: 40px 0;
+  overflow: hidden;
+}
+.swiper {
+  overflow: visible;
 }
 .items {
   padding: 40px 24px;
@@ -103,21 +137,16 @@ export default {
 }
 .item {
   padding: 12px;
-  height: 440px;
+  height: 620px;
   cursor: pointer;
   transition: 0.4s;
 }
 .item:hover {
   background: #ebebeb;
 }
-.item:nth-child(2) {
+.item:nth-child(even) {
   margin-top: 40px;
 }
-.item:nth-child(4),
-.item:nth-child(6) {
-  margin-top: -40px;
-}
-
 .iframe {
   width: 100%;
   height: 100%;

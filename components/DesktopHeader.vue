@@ -1,7 +1,15 @@
 <template>
   <div class="wrap" id="navbar">
-    <div class="brand" @click="scrollElement('hero')">
-      <img src="@/assets/img/white.png" alt="" />
+    <div class="container">
+      <div class="brand" @click="scrollElement('hero')">
+        <img src="@/assets/img/white.png" alt="" />
+      </div>
+      <div class="links">
+        <button>Biz haqimizda</button>
+        <button>Portfolio</button>
+        <button>Bog'lanish</button>
+        <button>Hmakorlarimiz</button>
+      </div>
     </div>
   </div>
 </template>
@@ -31,8 +39,6 @@ export default {
 
 <style scoped>
 .wrap {
-  display: flex;
-  justify-content: center;
   padding: 24px 0;
   position: fixed;
   top: 0;
@@ -40,6 +46,15 @@ export default {
   width: 100%;
   z-index: 999;
   transition: 0.4s;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  color: white;
+  font-size: 18px;
 }
 .brand {
   display: flex;
