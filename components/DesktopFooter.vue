@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="top">
+    <div class="container">
       <div class="left">
         <a href="tel:+998950082299" class="val">+998 95 008 22 99</a>
         <a href="mailto:info@avcprod.com" class="val">info@avcprod.com</a>
@@ -35,10 +35,10 @@ export default {};
   color: white;
   display: flex;
 }
-.top {
+.container {
   display: grid;
   align-items: flex-end;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 7fr 3fr;
 }
 .brand {
   display: flex;
