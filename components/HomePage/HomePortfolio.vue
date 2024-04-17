@@ -122,7 +122,7 @@ export default {
   transition: 0.4s;
 }
 .item:hover {
-  background: #ebebeb;
+  background: var(--blue);
 }
 .item:nth-child(even) {
   margin-top: 40px;
