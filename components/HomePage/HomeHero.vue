@@ -69,10 +69,10 @@ iframe {
 }
 @media screen and (max-width: 1024px) {
   .wrap {
-    height: 232px;
+    height: 200px;
   }
   iframe {
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
 }
 </style>

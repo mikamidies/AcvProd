@@ -99,7 +99,7 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .wrap {
-    position: static;
+    position: relative;
     background: black;
   }
   .scroll {
