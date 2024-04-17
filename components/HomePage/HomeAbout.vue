@@ -18,16 +18,25 @@
         </div>
         <div class="right">
           <p class="par">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            accusantium?
+            Bizning ijodiy video operatorlar guruhimiz onlayn marketing uchun
+            qiziqarli va esda qolarli video kontent yaratishga qaratilgan ijodiy
+            jamoadir. Biz yaratgan har bir video nafaqat tomoshabinlar
+            e'tiborini jalb qilishini, balki uzoq vaqt esda qolarli taassurot
+            qoldirishini ta'minlashga intilamiz.
           </p>
           <p class="txt">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-            perferendis maxime itaque voluptatem quas eius quam, veritatis ut
-            eveniet quod velit accusantium libero accusamus iste fuga omnis illo
-            eligendi repudiandae numquam? Magni? <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-            repellendus vel ipsum, aliquid explicabo velit aliquam.
+            Biz tomoshabinlarni suratga olish, tahrirlash va vizual dizaynga
+            innovatsion yondashuvlar orqali jalb qila olamiz. Bizning jamoamiz
+            Internet-marketing dunyosidagi tendentsiyalarni o'rganadi va sizga
+            va sizning biznesingizga eng samarali va ijodiy echimlarni taklif
+            qilish uchun doimiy ravishda takomillashib boradi. <br />
+            Biz uchun har bir loyiha bizning shaxsiyatimiz va
+            professionalligimizni namoyish etish imkoniyatidir. Biz videolarimiz
+            nafaqat sizning noyob vazifangiz va qadriyatlaringizni aks
+            ettirishini, balki tomoshabinlarni harakatga ilhomlantirishini
+            ta'minlashga intilamiz. Jamoamizga ishoning va biz sizning
+            xabaringizni maqsadli auditoriyaga eng jozibali va samarali tarzda
+            etkazishda yordam beramiz.
           </p>
         </div>
       </div>

@@ -4,8 +4,9 @@
     <div class="container">
       <h4 class="title">Biz bilan bog'lanish</h4>
       <form method="POST" @submit.prevent="sendTelegram">
-        <input v-model="name" type="text" placeholder="Ismingiz" />
+        <input required v-model="name" type="text" placeholder="Ismingiz" />
         <input
+          required
           v-model="number"
           type="number"
           placeholder="Telefon raqamingiz"
@@ -43,7 +44,7 @@ export default {
           this.number = "";
           this.name = "";
           this.message = "";
-          alert("Successfully sent");
+          alert("Muvofaqqiyatli jo'natildi");
         }),
         (error) => {
           console.log(error);

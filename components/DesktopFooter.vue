@@ -30,7 +30,7 @@ export default {};
 }
 .val {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 72px;
   color: white;
   display: flex;

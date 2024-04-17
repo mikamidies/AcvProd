@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
 
+@font-face {
+  font-family: "Halvar";
+  src: url(../fonts/HalvarBreit-Rg.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.woff);
+}
+
+@font-face {
+  font-family: "Gilroy-500";
+  src: url(../fonts/Gilroy-Medium.woff);
+}
+
 :root {
-  --regular: "Reddit Mono", sans-serif;
+  --decor: "Halvar", sans-serif;
+  --regular: "Gilroy", sans-serif;
+  --regular-md: "Gilroy-500", sans-serif;
 
   --blue: #023e8a;
   --dark: #001935;
@@ -26,6 +43,7 @@ html {
 body {
   font-family: var(--regular);
   color: var(--black);
+  font-size: 18px;
   padding: 0;
   margin: 0;
 }
@@ -154,6 +172,7 @@ input[type="number"] {
 }
 
 .title {
+  font-family: var(--decor);
   font-size: 40px;
   font-style: normal;
   font-weight: 600;

@@ -58,6 +58,8 @@ export default {};
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .title {
   text-align: center;

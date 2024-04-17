@@ -21,6 +21,9 @@
                 allowfullscreen
               ></iframe>
             </div>
+            <p class="name">
+              {{ item.name }}
+            </p>
           </div>
         </div>
       </div>
@@ -53,38 +56,14 @@ export default {
       modalHandle: false,
       videosOne: {},
       videos: [
-        {
-          src: "DmWWqogr_r8",
-          id: 0,
-        },
-        {
-          src: "qFLhGq0060w",
-          id: 1,
-        },
-        {
-          src: "v3L1XdqGnyI",
-          id: 2,
-        },
-        {
-          src: "HmAsUQEFYGI",
-          id: 3,
-        },
-        {
-          src: "DmWWqogr_r8",
-          id: 0,
-        },
-        {
-          src: "qFLhGq0060w",
-          id: 1,
-        },
-        {
-          src: "v3L1XdqGnyI",
-          id: 2,
-        },
-        {
-          src: "HmAsUQEFYGI",
-          id: 3,
-        },
+        { name: "Work Name", src: "DmWWqogr_r8", id: 0 },
+        { name: "Work Name", src: "qFLhGq0060w", id: 1 },
+        { name: "Work Name", src: "v3L1XdqGnyI", id: 2 },
+        { name: "Work Name", src: "HmAsUQEFYGI", id: 3 },
+        { name: "Work Name", src: "DmWWqogr_r8", id: 0 },
+        { name: "Work Name", src: "qFLhGq0060w", id: 1 },
+        { name: "Work Name", src: "v3L1XdqGnyI", id: 2 },
+        { name: "Work Name", src: "HmAsUQEFYGI", id: 3 },
       ],
     };
   },
@@ -210,5 +189,11 @@ export default {
   color: white;
   padding: 16px;
   cursor: pointer;
+}
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 24px;
+  font-family: var(--regular-md);
 }
 </style>
