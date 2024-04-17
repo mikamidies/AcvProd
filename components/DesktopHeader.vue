@@ -98,8 +98,12 @@ img {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .blacked {
+  .wrap {
+    position: static;
     background: black;
+  }
+  .scroll {
+    position: fixed;
   }
   .links {
     position: fixed;
