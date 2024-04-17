@@ -91,4 +91,13 @@ button {
   padding: 12px 56px;
   max-width: 30%;
 }
+@media screen and (max-width: 1024px) {
+  form {
+    align-items: flex-start;
+  }
+  button {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 </style>

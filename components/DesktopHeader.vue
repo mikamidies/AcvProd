@@ -1,17 +1,29 @@
 <template>
-  <div class="wrap" id="navbar">
+  <div class="wrap" id="navbar" :class="{ blacked: menuHandle == true }">
     <div class="container">
       <div class="brand" @click="scrollElement('hero')">
         <img src="@/assets/img/white.png" alt="" />
       </div>
-      <div class="burger">
+      <div
+        class="burger"
+        @click="menuHandle = !menuHandle"
+        :class="{ x: menuHandle == true }"
+      >
         <div class="stick"></div>
       </div>
-      <div class="links">
-        <button @click="scrollElement('about')">Biz haqimizda</button>
-        <button @click="scrollElement('portfolio')">Portfolio</button>
-        <button @click="scrollElement('contacts')">Bog'lanish</button>
-        <button @click="scrollElement('partners')">Hmakorlarimiz</button>
+      <div class="links" :class="{ show: menuHandle == true }">
+        <button @click="scrollElement('about'), (menuHandle = false)">
+          Biz haqimizda
+        </button>
+        <button @click="scrollElement('portfolio'), (menuHandle = false)">
+          Portfolio
+        </button>
+        <button @click="scrollElement('contacts'), (menuHandle = false)">
+          Bog'lanish
+        </button>
+        <button @click="scrollElement('partners'), (menuHandle = false)">
+          Hmakorlarimiz
+        </button>
       </div>
     </div>
   </div>
@@ -19,6 +31,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      menuHandle: false,
+    };
+  },
+
   methods: {
     scrollElement(id) {
       const element = document.getElementById(id);
@@ -80,13 +98,32 @@ img {
   display: none;
 }
 @media screen and (max-width: 1024px) {
+  .blacked {
+    background: black;
+  }
   .links {
     position: fixed;
-    top: 106px;
+    top: 85px;
     left: 0;
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
+    transition: 0.4s;
+
+    background: black;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 32px 12px;
+  }
+  .links.show {
+    transform: translateX(0);
+  }
+  .links button {
+    font-size: 22px;
+  }
+  .scroll .links {
+    top: 62px;
   }
   img {
     width: 120px;
@@ -102,6 +139,7 @@ img {
     width: 30px;
     height: 2px;
     background: white;
+    transition: 0.3s;
   }
   .stick::after {
     width: 30px;
@@ -111,6 +149,7 @@ img {
     position: absolute;
     top: 10px;
     left: 0;
+    transition: 0.3s;
   }
   .stick::before {
     width: 30px;
@@ -120,6 +159,17 @@ img {
     position: absolute;
     top: -10px;
     left: 0;
+    transition: 0.3s;
+  }
+  .x .stick {
+    transform: rotate(45deg);
+  }
+  .x .stick::after {
+    transform: rotate(270deg);
+    top: 0;
+  }
+  .x .stick::before {
+    display: none;
   }
 }
 </style>

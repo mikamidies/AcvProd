@@ -60,17 +60,27 @@ export default {
         { name: "Work Name", src: "qFLhGq0060w", id: 1 },
         { name: "Work Name", src: "v3L1XdqGnyI", id: 2 },
         { name: "Work Name", src: "HmAsUQEFYGI", id: 3 },
-        { name: "Work Name", src: "DmWWqogr_r8", id: 0 },
-        { name: "Work Name", src: "qFLhGq0060w", id: 1 },
-        { name: "Work Name", src: "v3L1XdqGnyI", id: 2 },
-        { name: "Work Name", src: "HmAsUQEFYGI", id: 3 },
+        { name: "Work Name", src: "DmWWqogr_r8", id: 4 },
+        { name: "Work Name", src: "qFLhGq0060w", id: 5 },
+        { name: "Work Name", src: "v3L1XdqGnyI", id: 6 },
+        { name: "Work Name", src: "HmAsUQEFYGI", id: 7 },
       ],
     };
   },
 
   mounted() {
     new Swiper(this.$refs.portSwiper, {
-      slidesPerView: 4,
+      slidesPerView: 1.3,
+      spaceBetween: 16,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+      speed: 1000,
     });
   },
 
@@ -104,7 +114,7 @@ export default {
   margin-bottom: 24px;
 }
 .wrap {
-  padding: 40px 0;
+  padding: 0 0 80px 0;
   overflow: hidden;
 }
 .swiper {
@@ -195,5 +205,28 @@ export default {
   font-weight: 500;
   margin-top: 24px;
   font-family: var(--regular-md);
+}
+@media screen and (max-width: 1024px) {
+  .wrap {
+    padding-bottom: 80px;
+  }
+  .item {
+    height: 320px;
+    padding: 0;
+  }
+  .item:nth-child(even) {
+    margin-top: 24px;
+  }
+  .name {
+    margin-top: 16px;
+  }
+  .body {
+    width: 95%;
+    height: 266px;
+    padding: 8px;
+  }
+  .x {
+    padding: 0;
+  }
 }
 </style>

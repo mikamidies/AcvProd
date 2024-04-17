@@ -191,11 +191,13 @@ input[type="number"] {
 }
 @media screen and (max-width: 1024px) {
   .title {
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 110%;
-    padding-left: 16px;
-    border-width: 4px;
+    padding: 0;
+  }
+  body {
+    font-size: 16px;
   }
 }

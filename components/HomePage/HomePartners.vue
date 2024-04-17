@@ -51,7 +51,7 @@ export default {};
 
 <style scoped>
 .wrap {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   position: relative;
 }
 .grid {
@@ -76,5 +76,17 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .wrap {
+    padding-bottom: 80px;
+  }
+  .grid {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item {
+    height: 80px;
+  }
 }
 </style>

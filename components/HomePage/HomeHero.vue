@@ -67,4 +67,12 @@ iframe {
   );
   z-index: 10;
 }
+@media screen and (max-width: 1024px) {
+  .wrap {
+    height: 60vh;
+  }
+  iframe {
+    transform: scale(2.3);
+  }
+}
 </style>

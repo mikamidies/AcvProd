@@ -4,17 +4,20 @@
     <div class="container">
       <div class="grid">
         <div class="left">
-          <h4 class="heading">Biz haqimizda</h4>
-          <div class="items">
-            <div class="item">
-              <p class="sup">Yillik tajriba</p>
-              <p class="num">4+</p>
-            </div>
-            <div class="item">
-              <p class="sup">Mijozlar va hamkorlar</p>
-              <p class="num">30+</p>
+          <div>
+            <h4 class="heading">Biz haqimizda</h4>
+            <div class="items">
+              <div class="item">
+                <p class="sup">Yillik tajriba</p>
+                <p class="num">4+</p>
+              </div>
+              <div class="item">
+                <p class="sup">Mijozlar va hamkorlar</p>
+                <p class="num">30+</p>
+              </div>
             </div>
           </div>
+          <img src="@/assets/img/blue.png" alt="" class="logo" />
         </div>
         <div class="right">
           <p class="par">
@@ -50,7 +53,7 @@ export default {};
 
 <style scoped>
 .wrap {
-  padding: 80px 0 40px 0;
+  padding: 80px 0 80px 0;
   position: relative;
 }
 .grid {
@@ -81,12 +84,45 @@ export default {};
   font-size: 20px;
   margin-bottom: 16px;
 }
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo {
+  width: 500px;
+  opacity: 0.1;
+}
 @media screen and (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    gap: 24px;
   }
   .sup {
     min-width: 0;
+    padding-bottom: 8px;
+    font-size: 15px;
+  }
+  .wrap {
+    padding: 40px 0;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .logo {
+    display: none;
+  }
+  .par {
+    font-size: 16px;
+  }
+  .txt {
+    font-size: 14px;
   }
 }
 </style>

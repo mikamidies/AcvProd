@@ -49,7 +49,28 @@ export default {};
 }
 @media screen and (max-width: 1024px) {
   .val {
+    text-align: center;
+    justify-content: center;
     font-size: 20px;
+    line-height: 150%;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .wrap {
+    padding: 40px 0 24px 0;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 48px;
+  }
+  .brand {
+    justify-content: center;
+  }
+  .brand img {
+    width: 120px;
   }
 }
 </style>
