@@ -21,9 +21,9 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <p class="name">
+            <!-- <p class="name">
               {{ item.name }}
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -56,14 +56,12 @@ export default {
       modalHandle: false,
       videosOne: {},
       videos: [
-        { name: "Work Name", src: "DmWWqogr_r8", id: 0 },
-        { name: "Work Name", src: "qFLhGq0060w", id: 1 },
-        { name: "Work Name", src: "v3L1XdqGnyI", id: 2 },
-        { name: "Work Name", src: "HmAsUQEFYGI", id: 3 },
-        { name: "Work Name", src: "DmWWqogr_r8", id: 4 },
-        { name: "Work Name", src: "qFLhGq0060w", id: 5 },
-        { name: "Work Name", src: "v3L1XdqGnyI", id: 6 },
-        { name: "Work Name", src: "HmAsUQEFYGI", id: 7 },
+        { name: "Work Name", src: "QYHO8w4Y318", id: 0 },
+        { name: "Work Name", src: "JhmsnAH8jK4", id: 1 },
+        { name: "Work Name", src: "_cna4abVFus", id: 2 },
+        { name: "Work Name", src: "tUAgcDFlZgc", id: 3 },
+        { name: "Work Name", src: "3UsN6LPCfy4", id: 4 },
+        { name: "Work Name", src: "KzDNv2B3UoE", id: 5 },
       ],
     };
   },
