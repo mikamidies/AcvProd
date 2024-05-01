@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="anchor" id="partners"></div>
     <div class="container">
-      <h4 class="title">Bizning hamkorlarimiz</h4>
+      <h4 class="title">Bizning mijozlarimiz</h4>
       <div class="grid">
         <div class="item">
           <img src="@/assets/img/part-1.png" alt="" />
@@ -69,6 +69,11 @@ export default {};
   width: 80%;
   height: 60%;
   object-fit: contain;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.item:hover img {
+  transform: scale(1);
 }
 .item {
   height: 120px;

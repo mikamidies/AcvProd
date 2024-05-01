@@ -9,11 +9,11 @@
             <div class="items">
               <div class="item">
                 <p class="sup">Yillik tajriba</p>
-                <p class="num">4+</p>
+                <p class="num">2+</p>
               </div>
               <div class="item">
                 <p class="sup">Mijozlar va hamkorlar</p>
-                <p class="num">30+</p>
+                <p class="num">40+</p>
               </div>
             </div>
           </div>

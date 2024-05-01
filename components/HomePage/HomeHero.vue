@@ -9,6 +9,15 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
+
+    <div class="button">
+      <a
+        href="https://www.youtube.com/watch?v=kqNG-uBFALo&t=2s"
+        target="_blank"
+      >
+        To'liq videoni ko'rish</a
+      >
+    </div>
   </div>
 </template>
 
@@ -67,12 +76,31 @@ iframe {
   );
   z-index: 10;
 }
+.button {
+  position: absolute;
+  bottom: 24px;
+  right: 32px;
+  z-index: 99;
+}
+.button a {
+  color: white;
+  font-size: 24px;
+}
 @media screen and (max-width: 1024px) {
   .wrap {
     height: 200px;
   }
   iframe {
     transform: scale(1.01);
+  }
+  .button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+  .button a {
+    color: white;
+    font-size: 18px;
   }
 }
 </style>
