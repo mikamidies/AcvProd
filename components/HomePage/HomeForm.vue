@@ -11,7 +11,7 @@
           type="number"
           placeholder="Telefon raqamingiz"
         />
-        <textarea v-model="message" placeholder="Qo'shimcha izoh"></textarea>
+        <textarea v-model="message" placeholder="Sizning sohangiz"></textarea>
         <button type="submit">Yuborish</button>
       </form>
     </div>

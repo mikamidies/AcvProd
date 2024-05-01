@@ -22,7 +22,7 @@
           Bog'lanish
         </button>
         <button @click="scrollElement('partners'), (menuHandle = false)">
-          Hmakorlarimiz
+          Mijozlarimiz
         </button>
       </div>
     </div>

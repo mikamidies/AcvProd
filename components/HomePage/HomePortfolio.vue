@@ -82,6 +82,7 @@ export default {
       spaceBetween: 16,
       autoplay: {
         delay: 3000,
+        disableOnInteraction: false,
       },
       breakpoints: {
         1024: {
@@ -219,11 +220,11 @@ export default {
     padding-bottom: 80px;
   }
   .item {
-    height: 320px;
+    height: 400px;
     padding: 0;
   }
   .item:nth-child(even) {
-    margin-top: 24px;
+    margin-top: 0;
   }
   .name {
     margin-top: 16px;
